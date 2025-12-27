@@ -2,6 +2,8 @@
 
 **A unique system designed for students to take control of their screen usage, stay productive, and build lasting digital habits.**
 
+Students today spend excessive time on screens, affecting focus, sleep, and productivity. Our system tracks daily and weekly usage, sets personal targets, and motivates students through challenges, rewards, streaks, and peer accountability to build lasting healthy habits.
+
 ---
 
 ## ⏱️ Daily & Weekly Screen Tracking
