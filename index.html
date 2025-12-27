@@ -50,3 +50,93 @@
       background: #22c55e;
       transition: width 1s linear;
     }
+
+    .status {
+      text-align: center;
+      font-size: 14px;
+      opacity: .8;
+      margin-bottom: 15px;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 8px;
+      border: none;
+      border-radius: 10px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .start { background: #22c55e; }
+    .pause { background: #facc15; }
+    .reset { background: #ef4444; }
+
+    .locked button.start {
+      opacity: .4;
+      pointer-events: none;
+    }
+
+    .section {
+      background: #020617;
+      border: 1px solid #1e293b;
+      border-radius: 10px;
+      padding: 10px;
+      margin-top: 12px;
+      font-size: 14px;
+    }
+
+    .blocked span {
+      display: inline-block;
+      background: #1e293b;
+      padding: 4px 8px;
+      border-radius: 8px;
+      margin: 4px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="app" id="app">
+
+    <h2>🔒 BuddyLock</h2>
+
+    <div class="timer" id="timer">25:00</div>
+
+    <div class="progress">
+      <div class="bar" id="bar"></div>
+    </div>
+
+    <div class="status" id="status">Ready to focus</div>
+
+    <button class="start" onclick="startSession()">Start Focus</button>
+    <button class="pause" onclick="pauseSession()">Pause</button>
+    <button class="reset" onclick="resetSession()">Reset</button>
+
+    <div class="section">
+      🔥 Streak: <b><span id="streak">0</span> days</b>
+    </div>
+
+    <div class="section">
+      🎯 Daily Challenge  
+      <br>❌ No social media for 1 hour
+    </div>
+
+    <div class="section blocked">
+      🚫 Blocked Apps  
+      <br>
+      <span>Instagram</span>
+      <span>YouTube</span>
+      <span>Netflix</span>
+    </div>
+
+  </div>
+
+  <audio id="sound">
+    <source src="https://actions.google.com/sounds/v1/alarms/beep_short.ogg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
