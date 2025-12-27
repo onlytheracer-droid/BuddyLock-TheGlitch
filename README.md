@@ -4,6 +4,13 @@
 
 Students today spend excessive time on screens, affecting focus, sleep, and productivity. Our system tracks daily and weekly usage, sets personal targets, and motivates students through challenges, rewards, streaks, and peer accountability to build lasting healthy habits.
 
+Live Demo: https://onlytheracer-droid.github.io/BuddyLock-TheGlitch/
+
+## 📸 Screenshots
+
+### Focus Session
+![Focus Session](screenshots/focus-session.png)
+
 ---
 
 ## ⏱️ Daily & Weekly Screen Tracking
