@@ -1,14 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>BuddyLock – Screen Time Control</title>
-</head>
-<body>
-  <h1>BuddyLock – Screen Time Control</h1>
-  <p>Welcome! This is a demo prototype preview.</p>
-  <button onclick="startTimer()">Start Focus Session</button>
-  <p id="output"></p>
+  <meta charset="UTF-8">
+  <title>BuddyLock – The Glitch</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <script src="script.js"></script>
-</body>
-</html>
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, sans-serif;
+      background: #020617;
+      color: #e5e7eb;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .app {
+      width: 340px;
+      background: #020617;
+      border-radius: 16px;
+      padding: 20px;
+      box-shadow: 0 20px 50px rgba(0,0,0,.6);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .timer {
+      font-size: 42px;
+      text-align: center;
+      margin: 15px 0;
+    }
+
+    .progress {
+      height: 6px;
+      background: #1e293b;
+      border-radius: 10px;
+      overflow: hidden;
+      margin-bottom: 15px;
+    }
+
+    .bar {
+      height: 100%;
+      width: 0%;
+      background: #22c55e;
+      transition: width 1s linear;
+    }
